@@ -242,6 +242,18 @@ h1 span {
   align-items: center;
   perspective: 1300px;
 }
+.phone-caption {
+  position: absolute;
+  z-index: 5;
+  bottom: 2px;
+  padding: 7px 11px;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  color: var(--muted);
+  background: var(--surface);
+  font-size: 10px;
+  font-weight: 700;
+}
 .orb {
   position: absolute;
   border-radius: 50%;
@@ -581,7 +593,7 @@ h1 span {
 }
 .step {
   position: relative;
-  min-height: 310px;
+  min-height: 250px;
   padding: 28px;
   border: 1px solid var(--line);
   border-radius: 28px;
@@ -597,7 +609,7 @@ h1 span {
 .feature-icon {
   width: 52px;
   height: 52px;
-  margin-bottom: 34px;
+  margin-bottom: 20px;
   display: grid;
   place-items: center;
   border-radius: 18px;
@@ -617,6 +629,13 @@ h1 span {
   color: var(--muted);
   font-size: 14px;
   line-height: 1.7;
+}
+.release-note {
+  max-width: 680px;
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
 }
 .bento {
   display: grid;
@@ -799,7 +818,7 @@ h1 span {
   font-size: 10px;
 }
 .final-cta {
-  padding: 100px 0;
+  padding: 72px 0;
 }
 .final-box {
   padding: 72px 30px;
@@ -910,13 +929,12 @@ footer {
     gap: 20px;
   }
   .steps {
-    grid-template-columns: repeat(3, minmax(260px, 1fr));
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 12px;
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
   .step {
-    scroll-snap-align: start;
+    min-height: auto;
+    padding: 22px;
   }
   .phone.left {
     left: 12%;
@@ -940,22 +958,23 @@ footer {
     gap: 0;
   }
   .hero {
-    padding: 116px 0 70px;
+    min-height: 0;
+    padding: 105px 0 42px;
   }
   .hero-grid {
     gap: 20px;
   }
   h1 {
-    font-size: 52px;
-    letter-spacing: -3.5px;
+    font-size: 44px;
+    letter-spacing: -2.7px;
   }
   .lede {
     font-size: 16px;
   }
   .phone-stage {
-    min-height: 490px;
-    transform: scale(0.86);
-    margin: -22px -40px;
+    min-height: 410px;
+    transform: scale(0.8);
+    margin: -14px -40px -22px;
   }
   .phone.back {
     display: none;
@@ -975,34 +994,8 @@ footer {
     font-size: 39px;
     letter-spacing: -2px;
   }
-  .steps {
-    margin-right: -14px;
-  }
-  .step {
-    min-height: 280px;
-  }
-  .bento {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 12px;
-    margin-right: -14px;
-    padding-right: 14px;
-    padding-bottom: 12px;
-  }
-  .feature,
-  .feature.featured,
-  .feature.wide {
-    display: block;
-    min-width: 86%;
-    min-height: 350px;
-    scroll-snap-align: start;
-  }
-  .feature.featured .mini-list {
-    margin-top: 28px;
-  }
-  .privacy-pills {
-    margin-top: 26px;
+  .section {
+    padding: 58px 0;
   }
   .goal-section {
     padding: 80px 0;

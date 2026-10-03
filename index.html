@@ -3,21 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Casa em Dia — sabe o que tens, come a tempo</title>
+    <title>Casa em Dia — inventário alimentar para Android</title>
     <meta
       name="description"
-      content="Inventário, validades, receitas e macros numa app Android privada. Digitaliza, decide o que comer e reduz o desperdício."
+      content="Uma app Android para registar os alimentos de casa, acompanhar validades e organizar compras. Disponível em versão de teste."
     />
     <meta name="theme-color" content="#F6F5EF" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_PT" />
     <meta
       property="og:title"
-      content="Casa em Dia — sabe o que tens, come a tempo"
+      content="Casa em Dia — inventário alimentar para Android"
     />
     <meta
       property="og:description"
-      content="A app Android que junta inventário, validades, receitas e macros — sem conta e sem anúncios."
+      content="Regista alimentos, acompanha validades e organiza compras numa app Android em fase de teste."
     />
     <link rel="stylesheet" href="site.css" />
     <script>
@@ -41,8 +41,8 @@
           Casa em Dia
         </a>
         <nav aria-label="Navegação principal">
-          <a class="nav-link" href="#como-funciona">Como funciona</a>
           <a class="nav-link" href="#funcionalidades">Funcionalidades</a>
+          <a class="nav-link" href="privacy.html">Privacidade</a>
           <button
             class="theme"
             type="button"
@@ -66,12 +66,13 @@
       <section class="hero">
         <div class="wrap hero-grid">
           <div class="hero-copy reveal">
-            <span class="eyebrow">A TUA CASA, SEM DESPERDÍCIO</span>
-            <h1>Sabe o que tens.<br /><span>Come a tempo.</span></h1>
+            <span class="eyebrow">INVENTÁRIO DOMÉSTICO PARA ANDROID</span>
+            <h1>
+              Uma app para organizar<br /><span>os alimentos em casa.</span>
+            </h1>
             <p class="lede">
-              O Casa em Dia transforma códigos, rótulos e validades numa decisão
-              simples: o que comer agora, o que comprar e quanto falta para a
-              tua meta.
+              Regista produtos e quantidades, acompanha validades e organiza a
+              lista de compras. A versão disponível é uma prévia de teste.
             </p>
             <div class="actions">
               <a
@@ -82,21 +83,21 @@
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 19h14" />
                 </svg>
-                Descarregar para Android
+                Descarregar prévia Android
               </a>
-              <a class="button secondary" href="#como-funciona"
-                >Ver como funciona</a
+              <a class="button secondary" href="#funcionalidades"
+                >Ver funcionalidades</a
               >
             </div>
-            <div class="trust" aria-label="Vantagens principais">
-              <span>Sem conta</span><span>Sem anúncios</span
-              ><span>Dados no telemóvel</span>
+            <div class="trust" aria-label="Informação da aplicação">
+              <span>Android</span><span>Sem conta</span
+              ><span>Versão de teste</span>
             </div>
           </div>
 
           <div
             class="phone-stage reveal"
-            aria-label="Pré-visualização da aplicação"
+            aria-label="Exemplo ilustrativo da aplicação"
           >
             <div class="orb one"></div>
             <div class="orb two"></div>
@@ -106,38 +107,42 @@
                 <small>CASA EM DIA</small>
                 <h3>Inventário</h3>
                 <div class="filter-mock">
-                  <b>⚙</b
-                  ><span>Filtros<br /><em>Frigorífico · Laticínios</em></span
+                  <b>⌕</b
+                  ><span
+                    >Pesquisa<br /><em>Local · validade · categoria</em></span
                   ><i>2</i>
                 </div>
                 <div class="food-card">
-                  <b>Iogurte cremoso</b><span>4 embalagens · Frigorífico</span>
+                  <b>Iogurte</b><span>Frigorífico · 4 embalagens</span>
                   <div><i>Hoje</i><i>Laticínios</i></div>
                 </div>
                 <div class="food-card faint">
-                  <b>Leite UHT</b><span>2 embalagens · Despensa</span>
-                  <div><i>4–7 dias</i></div>
+                  <b>Leite</b><span>Despensa · 2 embalagens</span>
+                  <div><i>Validade registada</i></div>
                 </div>
               </div>
             </div>
             <div class="phone front">
               <div class="speaker"></div>
               <div class="screen today-screen">
-                <small>SEXTA-FEIRA, 2 OUT</small>
-                <h3>Bom dia.</h3>
-                <p>Há 3 produtos que pedem atenção.</p>
+                <small>CASA EM DIA</small>
+                <h3>Hoje</h3>
+                <p>Inventário e registo alimentar.</p>
                 <div class="scan-circle">⌗</div>
                 <span class="scan-label">Digitalizar</span>
                 <div class="today-card">
-                  <div><span>Hoje</span><b>1 420</b><em>de 2 275 kcal</em></div>
-                  <div class="ring"><span>62%</span></div>
+                  <div>
+                    <span>Registo alimentar</span><b>Do teu dia</b
+                    ><em>Valores conforme os dados disponíveis</em>
+                  </div>
+                  <div class="ring"><span>✓</span></div>
                   <div class="macro">
                     <i style="--p: 72%"></i
-                    ><span>Proteína <b>94 / 130 g</b></span>
+                    ><span>Energia <b>registada</b></span>
                   </div>
                   <div class="macro">
                     <i style="--p: 56%"></i
-                    ><span>Hidratos <b>150 / 268 g</b></span>
+                    ><span>Macros <b>registadas</b></span>
                   </div>
                 </div>
               </div>
@@ -148,72 +153,21 @@
                 <small>CASA EM DIA</small>
                 <h3>Receitas</h3>
                 <div class="filter-mock">
-                  <b>⚙</b
-                  ><span>Filtros<br /><em>Proteína · Até 10 min</em></span
+                  <b>⌕</b><span>Filtros<br /><em>Tempo · ingredientes</em></span
                   ><i>2</i>
                 </div>
                 <div class="recipe-card">
-                  <span class="pill">Tens tudo</span
+                  <span class="pill">Receita local</span
                   ><b>Batido de banana e aveia</b
-                  ><em>5 min · 100% disponível</em><button>Ver receita</button>
+                  ><em>Ingredientes e preparação</em
+                  ><button>Ver receita</button>
                 </div>
                 <div class="recipe-card faint">
-                  <b>Iogurte com fruta</b><em>5 min · 75% disponível</em>
+                  <b>Iogurte com fruta</b><em>Receita local</em>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="promise reveal">
-        <div class="wrap promise-grid">
-          <span class="eyebrow">UMA DECISÃO DE CADA VEZ</span>
-          <p>
-            <strong
-              >Menos coisas esquecidas. Mais refeições com o que já
-              tens.</strong
-            >
-            O inventário, as receitas e o plano alimentar falam entre si — sem
-            folhas de cálculo e sem adivinhar.
-          </p>
-        </div>
-      </section>
-
-      <section class="section" id="como-funciona">
-        <div class="wrap">
-          <div class="section-head reveal">
-            <span class="eyebrow">COMO FUNCIONA</span>
-            <h2>Do rótulo ao prato, em três passos</h2>
-          </div>
-          <div class="steps">
-            <article class="step reveal">
-              <span>01</span>
-              <div class="step-icon">⌗</div>
-              <h3>Digitaliza</h3>
-              <p>
-                Lê o código de barras e fotografa a validade. O produto, as
-                macros e as categorias aparecem para rever.
-              </p>
-            </article>
-            <article class="step reveal">
-              <span>02</span>
-              <div class="step-icon">◫</div>
-              <h3>Organiza</h3>
-              <p>
-                Cada lote mantém a sua quantidade, local e validade. Os filtros
-                combinam-se sem ocupar o ecrã.
-              </p>
-            </article>
-            <article class="step reveal">
-              <span>03</span>
-              <div class="step-icon">♨</div>
-              <h3>Decide</h3>
-              <p>
-                Vê o que expira, escolhe uma receita e regista o que comeste. A
-                app mostra o que ainda falta no dia.
-              </p>
-            </article>
+            <span class="phone-caption">Pré-visualização ilustrativa</span>
           </div>
         </div>
       </section>
@@ -221,139 +175,55 @@
       <section class="section soft" id="funcionalidades">
         <div class="wrap">
           <div class="section-head reveal">
-            <span class="eyebrow">TUDO LIGADO</span>
-            <h2>Uma despensa que trabalha contigo</h2>
-            <p>
-              As funções existem para responder a perguntas reais, não para
-              criar mais manutenção.
-            </p>
+            <span class="eyebrow">VERSÃO DE TESTE</span>
+            <h2>O que podes fazer</h2>
           </div>
-          <div class="bento">
-            <article class="feature featured reveal">
-              <div>
-                <span class="feature-icon">◫</span>
-                <h3>O que precisa de ser usado primeiro?</h3>
-                <p>
-                  Validades ordenadas automaticamente, lotes separados e alertas
-                  locais antes de ser tarde.
-                </p>
-              </div>
-              <div class="mini-list">
-                <div>
-                  <i class="red"></i
-                  ><span><b>Iogurte</b><em>expira hoje</em></span
-                  ><strong>4</strong>
-                </div>
-                <div>
-                  <i class="amber"></i
-                  ><span><b>Leite</b><em>faltam 5 dias</em></span
-                  ><strong>2</strong>
-                </div>
-                <div>
-                  <i class="green"></i
-                  ><span><b>Arroz</b><em>sem urgência</em></span
-                  ><strong>1</strong>
-                </div>
-              </div>
-            </article>
-            <article class="feature dark reveal">
-              <span class="feature-icon">⌗</span>
-              <h3>Um scan, vários dados</h3>
+          <div class="steps">
+            <article class="step reveal">
+              <div class="step-icon">◫</div>
+              <h3>Registar alimentos</h3>
               <p>
-                O Open Food Facts sugere nome, tamanho, macros e categorias. Tu
-                tens sempre a última palavra.
-              </p>
-              <div class="tag-cloud">
-                <span>Laticínios</span><span>Proteína</span
-                ><span>Pequeno-almoço</span>
-              </div>
-            </article>
-            <article class="feature reveal">
-              <span class="feature-icon">♨</span>
-              <h3>Receitas com o que existe</h3>
-              <p>
-                Ideias ordenadas por disponibilidade e urgência, com o que falta
-                enviado diretamente para compras.
+                Guarda produtos, quantidades, localizações e datas de validade.
+                Revê os dados sugeridos pelo scan antes de os guardar.
               </p>
             </article>
-            <article class="feature tint reveal">
-              <span class="feature-icon">◎</span>
-              <h3>Macros sem perder o fio</h3>
+            <article class="step reveal">
+              <div class="step-icon">▤</div>
+              <h3>Organizar compras e receitas</h3>
               <p>
-                Regista porções e vê calorias, proteína, hidratos e gordura
-                consumidos e em falta.
+                Mantém uma lista de compras e consulta receitas locais com os
+                ingredientes e a preparação.
               </p>
             </article>
-            <article class="feature wide reveal">
-              <div>
-                <span class="feature-icon">✓</span>
-                <h3>Privado por desenho</h3>
-                <p>
-                  Inventário, OCR e histórico ficam no dispositivo. Sem conta,
-                  anúncios ou perfil de consumo.
-                </p>
-              </div>
-              <div class="privacy-pills">
-                <span>SQLite local</span><span>Backup teu</span
-                ><span>OCR no dispositivo</span>
-              </div>
+            <article class="step reveal">
+              <div class="step-icon">◎</div>
+              <h3>Acompanhar alimentação</h3>
+              <p>
+                Regista o que comes e consulta os valores de calorias e macros
+                disponíveis para os alimentos.
+              </p>
             </article>
           </div>
+          <p class="release-note reveal">
+            A leitura de datas e a informação nutricional podem precisar de
+            confirmação. Esta versão continua em desenvolvimento.
+          </p>
         </div>
       </section>
 
-      <section class="goal-section">
-        <div class="wrap goal-grid">
-          <div class="reveal">
-            <span class="eyebrow">O TEU OBJETIVO</span>
-            <h2>Não é só contar.<br />É saber o que falta.</h2>
-            <p>
-              Define uma meta diária, regista o que comeste e usa os alimentos
-              que já estão em casa para chegar lá.
-            </p>
-          </div>
-          <div class="goal-card reveal">
-            <div class="goal-top">
-              <span>Meta diária</span><b>2 275 <small>kcal</small></b>
-            </div>
-            <div class="goal-row">
-              <span>Proteína</span>
-              <div><i style="--p: 72%"></i></div>
-              <b>94 / 130 g</b>
-            </div>
-            <div class="goal-row">
-              <span>Hidratos</span>
-              <div><i style="--p: 56%"></i></div>
-              <b>150 / 268 g</b>
-            </div>
-            <div class="goal-row">
-              <span>Gordura</span>
-              <div><i style="--p: 61%"></i></div>
-              <b>46 / 76 g</b>
-            </div>
-            <p>
-              Exemplo editável: cada pessoa escolhe o peso objetivo e o ritmo.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="final-cta">
+      <section class="final-cta" id="versao">
         <div class="wrap reveal">
           <div class="final-box">
-            <span class="eyebrow">PRÉVIA ANDROID</span>
-            <h2>Põe a casa em dia.</h2>
-            <p>
-              Instala a versão de teste no teu telemóvel Android e começa pelo
-              próximo produto.
-            </p>
+            <span class="eyebrow">PRÉVIA PARA ANDROID</span>
+            <h2>Experimenta a versão de teste.</h2>
+            <p>Android 7 ou superior · ARM64</p>
             <a
               class="button primary light"
               href="https://github.com/jrafael-rep/home-inventory/releases/download/android-preview-1.2.0-3/casa-em-dia-preview-arm64.apk"
               rel="noopener"
               >Descarregar APK</a
             >
-            <small>Android 7.0 ou superior · versão de teste</small>
+            <small>O download requer acesso ao repositório GitHub.</small>
           </div>
         </div>
       </section>
@@ -361,7 +231,7 @@
 
     <footer>
       <div class="wrap footer-grid">
-        <span>Casa em Dia, por Jrafa</span>
+        <span>Casa em Dia</span>
         <div>
           <a href="privacy.html">Privacidade</a
           ><a
